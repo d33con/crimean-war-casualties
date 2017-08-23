@@ -1,35 +1,34 @@
 import React, { Component } from "react";
-import { Sunburst } from "react-vis";
+import SunburstChart from "./SunburstChart";
+import UpdateDataButton from "./UpdateDataButton";
 import "./App.css";
 
-import data from "./data";
+import dataSetA from "./data";
+import dataSetB from "./data2";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showTooltip: false,
-      statName: null,
-      statValue: null
+      data: dataSetA,
+      dataStyle: "country"
     };
-    this.onMouseOver = this.onMouseOver.bind(this);
-    this.onMouseLeave = this.onMouseLeave.bind(this);
+
+    this.onChangeData = this.onChangeData.bind(this);
   }
 
-  onMouseOver(e) {
-    const statName = e.name;
-    const statValue = e.size || e.value;
-    this.setState({
-      showTooltip: true,
-      statName: statName,
-      statValue: statValue
-    });
-  }
-
-  onMouseLeave() {
-    this.setState({
-      showTooltip: false
-    });
+  onChangeData() {
+    if (this.state.data === dataSetA) {
+      this.setState({
+        data: dataSetB,
+        dataStyle: "side"
+      });
+    } else {
+      this.setState({
+        data: dataSetA,
+        dataStyle: "country"
+      });
+    }
   }
 
   render() {
@@ -37,27 +36,17 @@ class App extends Component {
       <div className="App">
         <div>
           <h1>Crimean War Casualties</h1>
+          <UpdateDataButton
+            onClick={this.onChangeData}
+            dataStyle={this.state.dataStyle}
+          />
         </div>
         <div className="container">
-          <Sunburst
-            hideRootNode
-            colorType="literal"
-            data={data}
-            height={750}
-            width={750}
-            onValueMouseOver={e => this.onMouseOver(e)}
-            onValueMouseOut={this.onMouseLeave}
-            stroke="white"
-          />
-          {this.state.showTooltip &&
-            <div className="tooltip">
-              <div>
-                {this.state.statName}
-              </div>
-              <div>
-                {this.state.statValue}
-              </div>
-            </div>}
+          <SunburstChart data={this.state.data} />
+        </div>
+        <div className="footer">
+          By <a href="https://github.com/d33con">Oliver Bullen</a> | Data from{" "}
+          <a href="https://en.wikipedia.org/wiki/Crimean_War">Wikipedia</a>
         </div>
       </div>
     );

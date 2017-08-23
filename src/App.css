@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
+body,
+html {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 .App {
   text-align: center;
   font-family: "Playfair Display", serif;
+  height: 95vh;
 }
 
 .container {
   display: flex;
-  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .rv-xy-plot {
@@ -16,16 +24,54 @@
 
 .tooltip {
   position: absolute;
-  background-color: #2c3e50;
+  background-color: #ececec;
   width: 200px;
-  height: auto;
+  height: 75px;
   padding: 20px 10px;
   border-radius: 3px;
+  border: 1px solid #2c3e50;
   top: 50%;
   left: 50%;
   margin-left: -100px;
-  margin-top: -25px;
-  color: #eaecee;
-  opacity: 0.8;
+  color: #2c3e50;
   font-size: 1.25rem;
+}
+
+.tooltip-value {
+  font-size: 1.75rem;
+}
+
+.data-update-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.update-button {
+  min-width: 20rem;
+  background: #ececec;
+  border: 1px solid #2c3e50;
+  color: #2c3e50;
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.update-button:hover {
+  background: #2c3e50;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.data-shown {
+  width: 16rem;
+  font-size: 1.25rem;
+  margin: 0 20px;
+}
+
+.footer {
+  margin: -10px 0px 5px 0px;
 }

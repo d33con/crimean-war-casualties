@@ -1,19 +1,18 @@
-const data = {
+const data2 = {
   children: [
     {
-      name: "Allied Forces",
+      name: "Allied  Forces",
       color: "#C0392B",
       value: 603132,
       children: [
         {
-          name: "Ottoman Empire",
-          color: "#C0392B",
-          value: 165000,
+          name: "Allied Casualties",
+          color: "#424949",
+          value: 223513,
           children: [
             {
-              name: "Ottoman Casualties",
-              color: "#424949",
-              value: 45400,
+              name: "Ottoman Empire",
+              color: "#CD6155",
               children: [
                 {
                   name: "Killed In Action",
@@ -33,21 +32,8 @@ const data = {
               ]
             },
             {
-              name: "Ottoman Non-casualties",
-              color: "#2ECC71",
-              size: 119600
-            }
-          ]
-        },
-        {
-          name: "French Empire",
-          color: "#C0392B",
-          value: 309268,
-          children: [
-            {
-              name: "French Casualties",
-              color: "#424949",
-              value: 135485,
+              name: "French Empire",
+              color: "#D98880",
               children: [
                 {
                   name: "Killed In Action",
@@ -72,21 +58,8 @@ const data = {
               ]
             },
             {
-              name: "French Non-Casualties",
-              color: "#2ECC71",
-              size: 173783
-            }
-          ]
-        },
-        {
-          name: "British Empire",
-          color: "#C0392B",
-          value: 107864,
-          children: [
-            {
-              name: "British Casualties",
-              color: "#424949",
-              value: 40462,
+              name: "British Empire",
+              color: "#E6B0AA",
               children: [
                 {
                   name: "Killed In Action",
@@ -111,21 +84,8 @@ const data = {
               ]
             },
             {
-              name: "British Non-Casualties",
-              color: "#2ECC71",
-              size: 67402
-            }
-          ]
-        },
-        {
-          name: "Kingdom Of Sardinia",
-          color: "#C0392B",
-          value: 21000,
-          children: [
-            {
-              name: "Sardinian Casualties",
-              color: "#424949",
-              value: 2166,
+              name: "Kingdom Of Sardinia",
+              color: "#F2D7D5",
               children: [
                 {
                   name: "Killed In Action",
@@ -138,13 +98,13 @@ const data = {
                   size: 2138
                 }
               ]
-            },
-            {
-              name: "Sardinian Non-Casualties",
-              color: "#2ECC71",
-              size: 18834
             }
           ]
+        },
+        {
+          name: "Allied Survivors",
+          color: "#2ECC71",
+          size: 379619
         }
       ]
     },
@@ -181,7 +141,7 @@ const data = {
           ]
         },
         {
-          name: "Russian non-casualties",
+          name: "Russian Survivors",
           color: "#2ECC71",
           size: 358875
         }
@@ -190,4 +150,4 @@ const data = {
   ]
 };
 
-export default data;
+export default data2;
