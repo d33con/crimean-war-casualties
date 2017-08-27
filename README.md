@@ -1,1 +1,1 @@
-A Sunburst visualisation of casualties suffered during the Crimean War of 1853-6 using Uber's react-vis
+A Sunburst visualisation of casualties suffered during the Crimean War of 1853-6 built with [Uber's react-vis](link http://uber.github.io/react-vis/#/).
