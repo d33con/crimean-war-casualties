@@ -11,7 +11,7 @@ const data2 = {
           value: 223513,
           children: [
             {
-              name: "Ottoman Empire",
+              name: "Ottoman Empire Casualties",
               color: "#CD6155",
               children: [
                 {
@@ -32,7 +32,7 @@ const data2 = {
               ]
             },
             {
-              name: "French Empire",
+              name: "French Empire Casualties",
               color: "#D98880",
               children: [
                 {
@@ -58,7 +58,7 @@ const data2 = {
               ]
             },
             {
-              name: "British Empire",
+              name: "British Empire Casualties",
               color: "#E6B0AA",
               children: [
                 {
@@ -84,7 +84,7 @@ const data2 = {
               ]
             },
             {
-              name: "Kingdom Of Sardinia",
+              name: "Kingdom Of Sardinia Casualties",
               color: "#F2D7D5",
               children: [
                 {
