@@ -42,7 +42,9 @@ class App extends Component {
           />
         </div>
         <div className="container">
+          <div className="combatant">Russian Empire</div>
           <SunburstChart data={this.state.data} />
+          <div className="combatant">Allied Forces</div>
         </div>
         <div className="footer">
           By <a href="https://github.com/d33con">Oliver Bullen</a> | Data from{" "}

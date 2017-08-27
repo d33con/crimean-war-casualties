@@ -4,6 +4,7 @@ body,
 html {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 .App {
@@ -18,6 +19,12 @@ html {
   align-items: center;
 }
 
+.combatant {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 0 20px;
+}
+
 .rv-xy-plot {
   margin: 0 auto;
 }
@@ -26,7 +33,7 @@ html {
   position: absolute;
   background-color: #ececec;
   width: 200px;
-  height: 75px;
+  height: 80px;
   padding: 20px 10px;
   border-radius: 3px;
   border: 1px solid #2c3e50;
