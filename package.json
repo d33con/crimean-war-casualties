@@ -4,12 +4,12 @@
   "private": true,
   "homepage": "https://d33con.github.io/crimean-war-casualties",
   "dependencies": {
-    "eslint": "^4.5.0",
+    "eslint": "^4.7.2",
     "gh-pages": "^1.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-scripts": "1.0.10",
-    "react-vis": "^1.7.2"
+    "react-vis": "^1.7.9"
   },
   "scripts": {
     "predeploy": "npm run build",
